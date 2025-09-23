@@ -35,9 +35,10 @@ Partial Class General
         'btnMemb
         '
         Me.btnMemb.Font = New System.Drawing.Font("Microsoft Uighur", 16.2!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnMemb.Location = New System.Drawing.Point(395, 308)
+        Me.btnMemb.Location = New System.Drawing.Point(492, 211)
+        Me.btnMemb.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btnMemb.Name = "btnMemb"
-        Me.btnMemb.Size = New System.Drawing.Size(124, 40)
+        Me.btnMemb.Size = New System.Drawing.Size(93, 32)
         Me.btnMemb.TabIndex = 0
         Me.btnMemb.Text = "Members"
         Me.btnMemb.UseVisualStyleBackColor = True
@@ -45,9 +46,10 @@ Partial Class General
         'btnTrain
         '
         Me.btnTrain.Font = New System.Drawing.Font("Microsoft Uighur", 16.2!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnTrain.Location = New System.Drawing.Point(223, 337)
+        Me.btnTrain.Location = New System.Drawing.Point(272, 208)
+        Me.btnTrain.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btnTrain.Name = "btnTrain"
-        Me.btnTrain.Size = New System.Drawing.Size(103, 43)
+        Me.btnTrain.Size = New System.Drawing.Size(77, 35)
         Me.btnTrain.TabIndex = 1
         Me.btnTrain.Text = "Trainers"
         Me.btnTrain.UseVisualStyleBackColor = True
@@ -55,9 +57,10 @@ Partial Class General
         'btnSub
         '
         Me.btnSub.Font = New System.Drawing.Font("Microsoft Uighur", 16.2!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnSub.Location = New System.Drawing.Point(647, 337)
+        Me.btnSub.Location = New System.Drawing.Point(367, 145)
+        Me.btnSub.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btnSub.Name = "btnSub"
-        Me.btnSub.Size = New System.Drawing.Size(145, 43)
+        Me.btnSub.Size = New System.Drawing.Size(109, 35)
         Me.btnSub.TabIndex = 2
         Me.btnSub.Text = "Subscription"
         Me.btnSub.UseVisualStyleBackColor = True
@@ -65,9 +68,10 @@ Partial Class General
         'btnClass
         '
         Me.btnClass.Font = New System.Drawing.Font("Microsoft Uighur", 16.2!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnClass.Location = New System.Drawing.Point(647, 419)
+        Me.btnClass.Location = New System.Drawing.Point(381, 208)
+        Me.btnClass.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btnClass.Name = "btnClass"
-        Me.btnClass.Size = New System.Drawing.Size(111, 43)
+        Me.btnClass.Size = New System.Drawing.Size(83, 35)
         Me.btnClass.TabIndex = 3
         Me.btnClass.Text = "Classes"
         Me.btnClass.UseVisualStyleBackColor = True
@@ -75,9 +79,10 @@ Partial Class General
         'btnEquip
         '
         Me.btnEquip.Font = New System.Drawing.Font("Microsoft Uighur", 16.2!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnEquip.Location = New System.Drawing.Point(180, 419)
+        Me.btnEquip.Location = New System.Drawing.Point(367, 269)
+        Me.btnEquip.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btnEquip.Name = "btnEquip"
-        Me.btnEquip.Size = New System.Drawing.Size(146, 43)
+        Me.btnEquip.Size = New System.Drawing.Size(110, 35)
         Me.btnEquip.TabIndex = 4
         Me.btnEquip.Text = "Equipment"
         Me.btnEquip.UseVisualStyleBackColor = True
@@ -86,26 +91,32 @@ Partial Class General
         '
         Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
         Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox1.Location = New System.Drawing.Point(180, 54)
+        Me.PictureBox1.Location = New System.Drawing.Point(11, 20)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(656, 221)
+        Me.PictureBox1.Size = New System.Drawing.Size(62, 213)
         Me.PictureBox1.TabIndex = 5
         Me.PictureBox1.TabStop = False
         '
         'General
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.ClientSize = New System.Drawing.Size(1038, 506)
+        Me.BackgroundImage = Global.GYM_MANAGEMENT.My.Resources.Resources.s
+        Me.ClientSize = New System.Drawing.Size(1112, 620)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.btnEquip)
         Me.Controls.Add(Me.btnClass)
         Me.Controls.Add(Me.btnSub)
         Me.Controls.Add(Me.btnTrain)
         Me.Controls.Add(Me.btnMemb)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "General"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "General"
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 

@@ -18,4 +18,8 @@
         Me.Close()
         Members.Show()
     End Sub
+
+    Private Sub Equipment_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.Text = "Gym Management - Equipment"
+    End Sub
 End Class

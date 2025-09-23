@@ -58,5 +58,6 @@
     End Sub
 
     Private Sub General_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.Text = "Gym Management - General"
     End Sub
 End Class

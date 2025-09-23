@@ -29,31 +29,37 @@ Partial Class Classes
         Me.lblTrainer = New System.Windows.Forms.Label()
         Me.lblSchedule = New System.Windows.Forms.Label()
         Me.dtpSchedule = New System.Windows.Forms.DateTimePicker()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
         'txtClassName
         '
+        Me.txtClassName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtClassName.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtClassName.Location = New System.Drawing.Point(265, 54)
+        Me.txtClassName.Location = New System.Drawing.Point(209, 38)
+        Me.txtClassName.Margin = New System.Windows.Forms.Padding(2)
         Me.txtClassName.Name = "txtClassName"
-        Me.txtClassName.Size = New System.Drawing.Size(100, 38)
+        Me.txtClassName.Size = New System.Drawing.Size(149, 32)
         Me.txtClassName.TabIndex = 1
         '
         'cmbTrainer
         '
         Me.cmbTrainer.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmbTrainer.FormattingEnabled = True
-        Me.cmbTrainer.Location = New System.Drawing.Point(265, 143)
+        Me.cmbTrainer.Location = New System.Drawing.Point(209, 98)
+        Me.cmbTrainer.Margin = New System.Windows.Forms.Padding(2)
         Me.cmbTrainer.Name = "cmbTrainer"
-        Me.cmbTrainer.Size = New System.Drawing.Size(121, 39)
+        Me.cmbTrainer.Size = New System.Drawing.Size(149, 34)
         Me.cmbTrainer.TabIndex = 3
         '
         'btnSave
         '
         Me.btnSave.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnSave.Location = New System.Drawing.Point(265, 320)
+        Me.btnSave.Location = New System.Drawing.Point(316, 243)
+        Me.btnSave.Margin = New System.Windows.Forms.Padding(2)
         Me.btnSave.Name = "btnSave"
-        Me.btnSave.Size = New System.Drawing.Size(121, 66)
+        Me.btnSave.Size = New System.Drawing.Size(91, 54)
         Me.btnSave.TabIndex = 5
         Me.btnSave.Text = "Save"
         Me.btnSave.UseVisualStyleBackColor = True
@@ -61,59 +67,82 @@ Partial Class Classes
         'lblClassName
         '
         Me.lblClassName.AutoSize = True
+        Me.lblClassName.BackColor = System.Drawing.Color.Transparent
         Me.lblClassName.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblClassName.Location = New System.Drawing.Point(55, 54)
+        Me.lblClassName.Location = New System.Drawing.Point(36, 40)
+        Me.lblClassName.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblClassName.Name = "lblClassName"
-        Me.lblClassName.Size = New System.Drawing.Size(178, 32)
+        Me.lblClassName.Size = New System.Drawing.Size(142, 26)
         Me.lblClassName.TabIndex = 9
         Me.lblClassName.Text = "Class Name"
         '
         'lblTrainer
         '
         Me.lblTrainer.AutoSize = True
+        Me.lblTrainer.BackColor = System.Drawing.Color.Transparent
         Me.lblTrainer.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTrainer.Location = New System.Drawing.Point(84, 146)
+        Me.lblTrainer.Location = New System.Drawing.Point(36, 98)
+        Me.lblTrainer.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblTrainer.Name = "lblTrainer"
-        Me.lblTrainer.Size = New System.Drawing.Size(112, 32)
+        Me.lblTrainer.Size = New System.Drawing.Size(86, 26)
         Me.lblTrainer.TabIndex = 10
         Me.lblTrainer.Text = "Trainer"
         '
         'lblSchedule
         '
         Me.lblSchedule.AutoSize = True
+        Me.lblSchedule.BackColor = System.Drawing.Color.Transparent
         Me.lblSchedule.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblSchedule.Location = New System.Drawing.Point(71, 227)
+        Me.lblSchedule.Location = New System.Drawing.Point(36, 167)
+        Me.lblSchedule.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblSchedule.Name = "lblSchedule"
-        Me.lblSchedule.Size = New System.Drawing.Size(143, 32)
+        Me.lblSchedule.Size = New System.Drawing.Size(111, 26)
         Me.lblSchedule.TabIndex = 11
         Me.lblSchedule.Text = "Schedule"
         '
         'dtpSchedule
         '
         Me.dtpSchedule.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.dtpSchedule.Location = New System.Drawing.Point(265, 222)
+        Me.dtpSchedule.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.dtpSchedule.Location = New System.Drawing.Point(209, 162)
+        Me.dtpSchedule.Margin = New System.Windows.Forms.Padding(2)
         Me.dtpSchedule.Name = "dtpSchedule"
-        Me.dtpSchedule.Size = New System.Drawing.Size(328, 38)
+        Me.dtpSchedule.Size = New System.Drawing.Size(149, 32)
         Me.dtpSchedule.TabIndex = 12
+        '
+        'GroupBox1
+        '
+        Me.GroupBox1.BackColor = System.Drawing.Color.Transparent
+        Me.GroupBox1.Controls.Add(Me.lblClassName)
+        Me.GroupBox1.Controls.Add(Me.dtpSchedule)
+        Me.GroupBox1.Controls.Add(Me.txtClassName)
+        Me.GroupBox1.Controls.Add(Me.lblSchedule)
+        Me.GroupBox1.Controls.Add(Me.cmbTrainer)
+        Me.GroupBox1.Controls.Add(Me.lblTrainer)
+        Me.GroupBox1.Font = New System.Drawing.Font("Cambria", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox1.Location = New System.Drawing.Point(1, 12)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(414, 226)
+        Me.GroupBox1.TabIndex = 13
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "Please enter class details"
         '
         'Classes
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackgroundImage = Global.GYM_MANAGEMENT.My.Resources.Resources.gym
+        Me.BackgroundImage = Global.GYM_MANAGEMENT.My.Resources.Resources.form_bg
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.ClientSize = New System.Drawing.Size(642, 439)
-        Me.Controls.Add(Me.dtpSchedule)
-        Me.Controls.Add(Me.lblSchedule)
-        Me.Controls.Add(Me.lblTrainer)
-        Me.Controls.Add(Me.lblClassName)
+        Me.ClientSize = New System.Drawing.Size(418, 306)
+        Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.btnSave)
-        Me.Controls.Add(Me.cmbTrainer)
-        Me.Controls.Add(Me.txtClassName)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Classes"
         Me.Text = "Classes"
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
     Friend WithEvents txtClassName As System.Windows.Forms.TextBox
@@ -123,4 +152,5 @@ Partial Class Classes
     Friend WithEvents lblTrainer As System.Windows.Forms.Label
     Friend WithEvents lblSchedule As System.Windows.Forms.Label
     Friend WithEvents dtpSchedule As System.Windows.Forms.DateTimePicker
+    Friend WithEvents GroupBox1 As GroupBox
 End Class
