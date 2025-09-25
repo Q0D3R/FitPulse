@@ -63,4 +63,8 @@ Public Class Login
     Private Sub Login_FormClosed(sender As Object, e As FormClosedEventArgs) Handles Me.FormClosed
         Application.Exit()
     End Sub
+
+    Private Sub Login_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.Text = "Gym Management - Log In"
+    End Sub
 End Class

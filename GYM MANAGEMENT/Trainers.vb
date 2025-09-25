@@ -19,7 +19,7 @@ Public Class Trainers
         End Try
     End Sub
     Private Sub trainers_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        
+        Me.Text = "Gym Management - Trainers"
     End Sub
 
     Private Sub Label5_Click(sender As Object, e As EventArgs)

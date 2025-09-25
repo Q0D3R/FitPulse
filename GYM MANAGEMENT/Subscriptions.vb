@@ -8,7 +8,11 @@ Public Class Subscriptions
     Dim dt As DataTable
     Dim sql As String
 
+    
+
+
     Private Sub frmSubscriptions_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.Text = "Gym Management - Subscriptions"
         cboPlanType.Items.AddRange(New String() {"Monthly", "Weekly", "Yearly"})
         LoadMembers()
         LoadData()

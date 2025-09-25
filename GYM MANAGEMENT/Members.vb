@@ -6,6 +6,8 @@ Public Class Members
     Dim dt As DataTable
     Dim sql As String
     Dim selectedID As Integer
+
+    
     Private Sub frmMembers_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.Text = "Gym Management - Members"
         cboGender.Items.AddRange(New String() {"Female", "Male"})
