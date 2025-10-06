@@ -1,7 +1,7 @@
 ﻿
 Imports System.Data.OleDb
+Imports System.IO
 Public Class Classes
-    Dim con As New OleDb.OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=GymDB.accdb")
 
     Private Sub btnSave_Click(sender As Object, e As EventArgs) Handles btnSave.Click
         If txtClassName.Text = "" Then
@@ -16,7 +16,7 @@ Public Class Classes
         Else
             Try
                 con.Open()
-                Dim cmd As New OleDb.OleDbCommand("INSERT INTO Classes (ClassName, Trainer, Schedule) VALUES (?, ?, ?)", con)
+                cmd = New OleDb.OleDbCommand("INSERT INTO Classes (ClassName, Trainer, Schedule) VALUES (?, ?, ?)", con)
                 cmd.Parameters.AddWithValue("?", txtClassName.Text)
                 cmd.Parameters.AddWithValue("?", cmbTrainer.Text)
                 cmd.Parameters.AddWithValue("?", dtpSchedule.Value)
@@ -52,5 +52,9 @@ Public Class Classes
     Private Sub Classes_FormClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
         General.Show()
         e.Cancel = False
+    End Sub
+
+    Private Sub GroupBox1_Enter(sender As Object, e As EventArgs) Handles GroupBox1.Enter
+
     End Sub
 End Class

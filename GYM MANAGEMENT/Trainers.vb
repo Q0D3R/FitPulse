@@ -1,12 +1,11 @@
 ﻿
 Imports System.Data.OleDb
 Public Class Trainers
-    Dim con As New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=.NET Framework Data Provider for OLE DB")
 
     Private Sub btnSave_Click(sender As Object, e As EventArgs) Handles btnSave.Click
         Try
             con.Open()
-            Dim cmd As New OleDb.OleDbCommand("INSERT INTO Trainers (TrainerName, Specialty, Contact) VALUES (?, ?, ?)", con)
+            cmd = New OleDb.OleDbCommand("INSERT INTO Trainers (TrainerName, Specialty, Contact) VALUES (?, ?, ?)", con)
             cmd.Parameters.AddWithValue("?", txtName.Text)
             cmd.Parameters.AddWithValue("?", txtSpecialty.Text)
             cmd.Parameters.AddWithValue("?", txtContact.Text)

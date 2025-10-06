@@ -1,13 +1,8 @@
 ﻿Imports System.Data.OleDb
-Public Class Members
-    Dim con As New OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\USER\Documents\PROJECT.mdb")
-    Dim cmd As OleDbCommand
-    Dim da As OleDbDataAdapter
-    Dim dt As DataTable
-    Dim sql As String
-    Dim selectedID As Integer
+Imports GYM_MANAGEMENT.Classes
 
-    
+Public Class Members
+
     Private Sub frmMembers_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.Text = "Gym Management - Members"
         cboGender.Items.AddRange(New String() {"Female", "Male"})
@@ -140,7 +135,7 @@ Public Class Members
     End Sub
     Private Sub Label2_Click(sender As Object, e As EventArgs)
         Me.Close()
-        trainers.Show()
+        Trainers.Show()
     End Sub
 
     Private Sub Label4_Click(sender As Object, e As EventArgs)
@@ -160,6 +155,10 @@ Public Class Members
     End Sub
 
     Private Sub Label6_Click(sender As Object, e As EventArgs) Handles Label6.Click
+
+    End Sub
+
+    Private Sub GroupBox1_Enter(sender As Object, e As EventArgs) Handles GroupBox1.Enter
 
     End Sub
 End Class

@@ -2,15 +2,6 @@
 
 Public Class Subscriptions
 
-    Dim con As New OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\USER\Documents\PROJECT.mdb")
-    Dim cmd As OleDbCommand
-    Dim da As OleDbDataAdapter
-    Dim dt As DataTable
-    Dim sql As String
-
-    
-
-
     Private Sub frmSubscriptions_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.Text = "Gym Management - Subscriptions"
         cboPlanType.Items.AddRange(New String() {"Monthly", "Weekly", "Yearly"})
@@ -48,7 +39,7 @@ Public Class Subscriptions
         End Try
     End Sub
 
-    Private Sub btnSave_Click(sender As Object, e As EventArgs) Handles btnSave.Click
+    Private Sub btnSave_Click(sender As Object, e As EventArgs) Handles Button1.Click
         If cboMemberID.Text = "" Or cboPlanType.Text = "" Or txtAmount.Text = "" Then
             MsgBox("Please fill all fields.")
             Exit Sub
@@ -87,7 +78,7 @@ Public Class Subscriptions
         ClearFields()
     End Sub
 
-    Private Sub btnBackToMembers_Click(sender As Object, e As EventArgs) Handles btnBackToMembers.Click
+    Private Sub btnBackToMembers_Click(sender As Object, e As EventArgs)
         Dim membersForm As New Members
         Members.Show()
         Me.Hide()
@@ -114,6 +105,14 @@ Public Class Subscriptions
     End Sub
 
     Private Sub Label3_Click(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub lblStatus_Click(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub GroupBox1_Enter(sender As Object, e As EventArgs)
 
     End Sub
 End Class

@@ -89,6 +89,7 @@
     <Compile Include="Equipment.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Module.vb" />
     <Compile Include="Subscriptions.Designer.vb">
       <DependentUpon>Subscriptions.vb</DependentUpon>
     </Compile>
@@ -186,7 +187,9 @@
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\t.jpg" />

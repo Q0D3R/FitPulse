@@ -22,86 +22,22 @@ Partial Class Subscriptions
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.IblMemberID = New System.Windows.Forms.Label()
-        Me.lblPlanType = New System.Windows.Forms.Label()
-        Me.lblAmount = New System.Windows.Forms.Label()
-        Me.lblPaymentDate = New System.Windows.Forms.Label()
+        Me.dvgPayments = New System.Windows.Forms.DataGridView()
+        Me.btnClear = New System.Windows.Forms.Button()
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.cboMemberID = New System.Windows.Forms.ComboBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.cboPlanType = New System.Windows.Forms.ComboBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.txtAmount = New System.Windows.Forms.TextBox()
         Me.dtpPaymentDate = New System.Windows.Forms.DateTimePicker()
-        Me.btnSave = New System.Windows.Forms.Button()
-        Me.dvgPayments = New System.Windows.Forms.DataGridView()
-        Me.cboMemberID = New System.Windows.Forms.ComboBox()
-        Me.cboPlanType = New System.Windows.Forms.ComboBox()
-        Me.btnClear = New System.Windows.Forms.Button()
-        Me.btnBackToMembers = New System.Windows.Forms.Button()
         CType(Me.dvgPayments, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
-        '
-        'IblMemberID
-        '
-        Me.IblMemberID.AutoSize = True
-        Me.IblMemberID.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.IblMemberID.Location = New System.Drawing.Point(139, 89)
-        Me.IblMemberID.Name = "IblMemberID"
-        Me.IblMemberID.Size = New System.Drawing.Size(117, 25)
-        Me.IblMemberID.TabIndex = 0
-        Me.IblMemberID.Text = "Member ID"
-        '
-        'lblPlanType
-        '
-        Me.lblPlanType.AutoSize = True
-        Me.lblPlanType.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPlanType.Location = New System.Drawing.Point(139, 139)
-        Me.lblPlanType.Name = "lblPlanType"
-        Me.lblPlanType.Size = New System.Drawing.Size(110, 25)
-        Me.lblPlanType.TabIndex = 1
-        Me.lblPlanType.Text = "Plan Type"
-        '
-        'lblAmount
-        '
-        Me.lblAmount.AutoSize = True
-        Me.lblAmount.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblAmount.Location = New System.Drawing.Point(139, 191)
-        Me.lblAmount.Name = "lblAmount"
-        Me.lblAmount.Size = New System.Drawing.Size(135, 25)
-        Me.lblAmount.TabIndex = 2
-        Me.lblAmount.Text = "Amount Paid"
-        '
-        'lblPaymentDate
-        '
-        Me.lblPaymentDate.AutoSize = True
-        Me.lblPaymentDate.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPaymentDate.Location = New System.Drawing.Point(130, 240)
-        Me.lblPaymentDate.Name = "lblPaymentDate"
-        Me.lblPaymentDate.Size = New System.Drawing.Size(147, 25)
-        Me.lblPaymentDate.TabIndex = 3
-        Me.lblPaymentDate.Text = "Payment Date"
-        '
-        'txtAmount
-        '
-        Me.txtAmount.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtAmount.Location = New System.Drawing.Point(503, 186)
-        Me.txtAmount.Name = "txtAmount"
-        Me.txtAmount.Size = New System.Drawing.Size(100, 30)
-        Me.txtAmount.TabIndex = 4
-        '
-        'dtpPaymentDate
-        '
-        Me.dtpPaymentDate.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.dtpPaymentDate.Location = New System.Drawing.Point(503, 235)
-        Me.dtpPaymentDate.Name = "dtpPaymentDate"
-        Me.dtpPaymentDate.Size = New System.Drawing.Size(351, 30)
-        Me.dtpPaymentDate.TabIndex = 5
-        '
-        'btnSave
-        '
-        Me.btnSave.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnSave.Location = New System.Drawing.Point(320, 312)
-        Me.btnSave.Name = "btnSave"
-        Me.btnSave.Size = New System.Drawing.Size(75, 31)
-        Me.btnSave.TabIndex = 6
-        Me.btnSave.Text = "Save"
-        Me.btnSave.UseVisualStyleBackColor = True
         '
         'dvgPayments
         '
@@ -109,26 +45,8 @@ Partial Class Subscriptions
         Me.dvgPayments.Location = New System.Drawing.Point(159, 363)
         Me.dvgPayments.Name = "dvgPayments"
         Me.dvgPayments.RowTemplate.Height = 24
-        Me.dvgPayments.Size = New System.Drawing.Size(564, 150)
+        Me.dvgPayments.Size = New System.Drawing.Size(741, 150)
         Me.dvgPayments.TabIndex = 7
-        '
-        'cboMemberID
-        '
-        Me.cboMemberID.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cboMemberID.FormattingEnabled = True
-        Me.cboMemberID.Location = New System.Drawing.Point(503, 81)
-        Me.cboMemberID.Name = "cboMemberID"
-        Me.cboMemberID.Size = New System.Drawing.Size(121, 33)
-        Me.cboMemberID.TabIndex = 8
-        '
-        'cboPlanType
-        '
-        Me.cboPlanType.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cboPlanType.FormattingEnabled = True
-        Me.cboPlanType.Location = New System.Drawing.Point(503, 131)
-        Me.cboPlanType.Name = "cboPlanType"
-        Me.cboPlanType.Size = New System.Drawing.Size(121, 33)
-        Me.cboPlanType.TabIndex = 9
         '
         'btnClear
         '
@@ -140,52 +58,152 @@ Partial Class Subscriptions
         Me.btnClear.Text = "Clear"
         Me.btnClear.UseVisualStyleBackColor = True
         '
-        'btnBackToMembers
+        'GroupBox2
         '
-        Me.btnBackToMembers.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnBackToMembers.Location = New System.Drawing.Point(883, 464)
-        Me.btnBackToMembers.Name = "btnBackToMembers"
-        Me.btnBackToMembers.Size = New System.Drawing.Size(183, 34)
-        Me.btnBackToMembers.TabIndex = 11
-        Me.btnBackToMembers.Text = "Back To Members"
-        Me.btnBackToMembers.UseVisualStyleBackColor = True
+        Me.GroupBox2.BackColor = System.Drawing.Color.Transparent
+        Me.GroupBox2.Controls.Add(Me.Label1)
+        Me.GroupBox2.Controls.Add(Me.cboMemberID)
+        Me.GroupBox2.Controls.Add(Me.Label2)
+        Me.GroupBox2.Controls.Add(Me.cboPlanType)
+        Me.GroupBox2.Controls.Add(Me.Label3)
+        Me.GroupBox2.Controls.Add(Me.Label4)
+        Me.GroupBox2.Controls.Add(Me.Label5)
+        Me.GroupBox2.Controls.Add(Me.Button1)
+        Me.GroupBox2.Controls.Add(Me.txtAmount)
+        Me.GroupBox2.Controls.Add(Me.dtpPaymentDate)
+        Me.GroupBox2.Font = New System.Drawing.Font("Cambria", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox2.Location = New System.Drawing.Point(146, 51)
+        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(4)
+        Me.GroupBox2.Name = "GroupBox2"
+        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(4)
+        Me.GroupBox2.Size = New System.Drawing.Size(777, 283)
+        Me.GroupBox2.TabIndex = 16
+        Me.GroupBox2.TabStop = False
+        Me.GroupBox2.Text = "Please enter subscription details"
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(24, 49)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(0, 32)
+        Me.Label1.TabIndex = 12
+        '
+        'cboMemberID
+        '
+        Me.cboMemberID.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cboMemberID.FormattingEnabled = True
+        Me.cboMemberID.Location = New System.Drawing.Point(390, 70)
+        Me.cboMemberID.Name = "cboMemberID"
+        Me.cboMemberID.Size = New System.Drawing.Size(121, 33)
+        Me.cboMemberID.TabIndex = 8
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(26, 78)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(117, 25)
+        Me.Label2.TabIndex = 0
+        Me.Label2.Text = "Member ID"
+        '
+        'cboPlanType
+        '
+        Me.cboPlanType.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cboPlanType.FormattingEnabled = True
+        Me.cboPlanType.Location = New System.Drawing.Point(390, 120)
+        Me.cboPlanType.Name = "cboPlanType"
+        Me.cboPlanType.Size = New System.Drawing.Size(121, 33)
+        Me.cboPlanType.TabIndex = 9
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(26, 128)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(110, 25)
+        Me.Label3.TabIndex = 1
+        Me.Label3.Text = "Plan Type"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(26, 180)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(135, 25)
+        Me.Label4.TabIndex = 2
+        Me.Label4.Text = "Amount Paid"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(17, 229)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(147, 25)
+        Me.Label5.TabIndex = 3
+        Me.Label5.Text = "Payment Date"
+        '
+        'Button1
+        '
+        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Location = New System.Drawing.Point(207, 301)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(75, 31)
+        Me.Button1.TabIndex = 6
+        Me.Button1.Text = "Save"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'txtAmount
+        '
+        Me.txtAmount.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtAmount.Location = New System.Drawing.Point(390, 175)
+        Me.txtAmount.Name = "txtAmount"
+        Me.txtAmount.Size = New System.Drawing.Size(100, 30)
+        Me.txtAmount.TabIndex = 4
+        '
+        'dtpPaymentDate
+        '
+        Me.dtpPaymentDate.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dtpPaymentDate.Location = New System.Drawing.Point(390, 224)
+        Me.dtpPaymentDate.Name = "dtpPaymentDate"
+        Me.dtpPaymentDate.Size = New System.Drawing.Size(351, 30)
+        Me.dtpPaymentDate.TabIndex = 5
         '
         'Subscriptions
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackgroundImage = Global.GYM_MANAGEMENT.My.Resources.Resources.k
+        Me.BackgroundImage = Global.GYM_MANAGEMENT.My.Resources.Resources.form_bg
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(1173, 541)
-        Me.Controls.Add(Me.btnBackToMembers)
+        Me.ClientSize = New System.Drawing.Size(1071, 541)
+        Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.btnClear)
-        Me.Controls.Add(Me.cboPlanType)
-        Me.Controls.Add(Me.cboMemberID)
         Me.Controls.Add(Me.dvgPayments)
-        Me.Controls.Add(Me.btnSave)
-        Me.Controls.Add(Me.dtpPaymentDate)
-        Me.Controls.Add(Me.txtAmount)
-        Me.Controls.Add(Me.lblPaymentDate)
-        Me.Controls.Add(Me.lblAmount)
-        Me.Controls.Add(Me.lblPlanType)
-        Me.Controls.Add(Me.IblMemberID)
         Me.Name = "Subscriptions"
         Me.Text = "Subscriptions"
         CType(Me.dvgPayments, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox2.ResumeLayout(False)
+        Me.GroupBox2.PerformLayout()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
-    Friend WithEvents IblMemberID As System.Windows.Forms.Label
-    Friend WithEvents lblPlanType As System.Windows.Forms.Label
-    Friend WithEvents lblAmount As System.Windows.Forms.Label
-    Friend WithEvents lblPaymentDate As System.Windows.Forms.Label
+    Friend WithEvents dvgPayments As System.Windows.Forms.DataGridView
+    Friend WithEvents btnClear As System.Windows.Forms.Button
+    Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
+    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents cboMemberID As System.Windows.Forms.ComboBox
+    Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents cboPlanType As System.Windows.Forms.ComboBox
+    Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents Label4 As System.Windows.Forms.Label
+    Friend WithEvents Label5 As System.Windows.Forms.Label
+    Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents txtAmount As System.Windows.Forms.TextBox
     Friend WithEvents dtpPaymentDate As System.Windows.Forms.DateTimePicker
-    Friend WithEvents btnSave As System.Windows.Forms.Button
-    Friend WithEvents dvgPayments As System.Windows.Forms.DataGridView
-    Friend WithEvents cboMemberID As System.Windows.Forms.ComboBox
-    Friend WithEvents cboPlanType As System.Windows.Forms.ComboBox
-    Friend WithEvents btnClear As System.Windows.Forms.Button
-    Friend WithEvents btnBackToMembers As System.Windows.Forms.Button
 End Class

@@ -1,7 +1,8 @@
 ﻿
 Imports System.Data.OleDb
+
 Public Class Login
-    Dim con As New OleDb.OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\USER\Documents\PROJECT.mdb")
+
     Private Sub btnLogin_Click(sender As Object, e As EventArgs) Handles btnLogin.Click
         If txtUsername.Text = "" Then
             lblStatus.Text = "Invalid username! Please provide it"
@@ -18,7 +19,7 @@ Public Class Login
         Else
             Try
                 con.Open()
-                Dim cmd As New OleDbCommand("SELECT * FROM PROJECT WHERE Username=? AND Password=? AND Role=?", con)
+                cmd = New OleDbCommand("SELECT * FROM PROJECT WHERE Username=? AND Password=? AND Role=?", con)
                 cmd.Parameters.AddWithValue("?", txtUsername.Text)
                 cmd.Parameters.AddWithValue("?", txtPassword.Text)
                 cmd.Parameters.AddWithValue("?", cmbRole.Text)
@@ -40,6 +41,7 @@ Public Class Login
         End If
     End Sub
     Private Sub Login_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.Text = "Gym Management - Log In"
         cmbRole.Items.Clear()
         cmbRole.Items.Add("Admin")
         cmbRole.Items.Add("Staff")
@@ -64,7 +66,4 @@ Public Class Login
         Application.Exit()
     End Sub
 
-    Private Sub Login_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Me.Text = "Gym Management - Log In"
-    End Sub
 End Class
