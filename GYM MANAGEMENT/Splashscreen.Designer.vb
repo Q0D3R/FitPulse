@@ -40,7 +40,7 @@ Partial Class Splashscreen
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(484, 322)
+        Me.Label1.Location = New System.Drawing.Point(352, 242)
         Me.Label1.Margin = New System.Windows.Forms.Padding(10, 0, 10, 0)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(491, 39)
@@ -49,7 +49,7 @@ Partial Class Splashscreen
         '
         'prgLoad
         '
-        Me.prgLoad.Location = New System.Drawing.Point(510, 381)
+        Me.prgLoad.Location = New System.Drawing.Point(378, 301)
         Me.prgLoad.Name = "prgLoad"
         Me.prgLoad.Size = New System.Drawing.Size(377, 20)
         Me.prgLoad.Step = 20
@@ -62,7 +62,7 @@ Partial Class Splashscreen
         Me.lblPercentage.BackColor = System.Drawing.Color.Transparent
         Me.lblPercentage.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblPercentage.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.lblPercentage.Location = New System.Drawing.Point(893, 381)
+        Me.lblPercentage.Location = New System.Drawing.Point(761, 301)
         Me.lblPercentage.Name = "lblPercentage"
         Me.lblPercentage.Size = New System.Drawing.Size(24, 20)
         Me.lblPercentage.TabIndex = 2
@@ -74,7 +74,7 @@ Partial Class Splashscreen
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(1447, 777)
+        Me.ClientSize = New System.Drawing.Size(1134, 634)
         Me.Controls.Add(Me.lblPercentage)
         Me.Controls.Add(Me.prgLoad)
         Me.Controls.Add(Me.Label1)

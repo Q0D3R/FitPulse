@@ -43,4 +43,8 @@ Public Class Trainers
         Me.Close()
         Members.Show()
     End Sub
+
+    Private Sub Trainers_FormClosed(sender As Object, e As FormClosedEventArgs) Handles Me.FormClosed
+
+    End Sub
 End Class

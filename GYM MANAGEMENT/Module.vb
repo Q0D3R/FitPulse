@@ -9,6 +9,6 @@ Module Module1
     Public da As OleDbDataAdapter
     Public dt As DataTable
     Public sql As String
-    Public selectedID As Integer
+    Public i, selectedID As Integer
 
 End Module

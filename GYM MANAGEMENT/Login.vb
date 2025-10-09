@@ -5,15 +5,15 @@ Public Class Login
 
     Private Sub btnLogin_Click(sender As Object, e As EventArgs) Handles btnLogin.Click
         If txtUsername.Text = "" Then
-            lblStatus.Text = "Invalid username! Please provide it"
+            REM lblStatus.Text = "Invalid username! Please provide it"
             txtUsername.Focus()
             Exit Sub
         ElseIf txtPassword.Text = "" Then
-            lblStatus.Text = "Invalid password!"
+            REM lblStatus.Text = "Invalid password!"
             txtPassword.Focus()
             Exit Sub
         ElseIf cmbRole.SelectedIndex = -1 Then
-            lblStatus.Text = "Invalid user role!"
+            REM lblStatus.Text = "Invalid user role!"
             cmbRole.Focus()
             Exit Sub
         Else
@@ -66,4 +66,21 @@ Public Class Login
         Application.Exit()
     End Sub
 
+    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
+
+    End Sub
+
+    Private Sub lblForgot_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles lblForgot.LinkClicked
+        With Me
+            Me.Hide()
+            Forgot.Show()
+        End With
+    End Sub
+
+    Private Sub lblRegister_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles lblRegister.LinkClicked
+        With Me
+            Me.Hide()
+            Users.Show()
+        End With
+    End Sub
 End Class

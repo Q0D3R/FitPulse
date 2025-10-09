@@ -80,3 +80,5 @@ C:\Users\USER\Desktop\gym-management\GYM MANAGEMENT\obj\Debug\GYM_MANAGEMENT.Res
 C:\Users\USER\Desktop\gym-management\GYM MANAGEMENT\obj\Debug\GYM_MANAGEMENT.Splashscreen.resources
 C:\Users\USER\Desktop\gym-management\GYM MANAGEMENT\obj\Debug\GYM_MANAGEMENT.Trainers.resources
 C:\Users\USER\Desktop\gym-management\GYM MANAGEMENT\obj\Debug\GYM MANAGEMENT.vbproj.GenerateResource.Cache
+C:\Users\R0053-1T\OneDrive\Documents\GitHub\gym-management\GYM MANAGEMENT\obj\Debug\GYM_MANAGEMENT.Forgot.resources
+C:\Users\R0053-1T\OneDrive\Documents\GitHub\gym-management\GYM MANAGEMENT\obj\Debug\GYM_MANAGEMENT.Users.resources

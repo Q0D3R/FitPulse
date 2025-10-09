@@ -25,18 +25,18 @@ Partial Class General
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(General))
         Me.btnMemb = New System.Windows.Forms.Button()
         Me.btnTrain = New System.Windows.Forms.Button()
-        Me.btnSub = New System.Windows.Forms.Button()
         Me.btnClass = New System.Windows.Forms.Button()
         Me.btnEquip = New System.Windows.Forms.Button()
+        Me.btnSub = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'btnMemb
         '
         Me.btnMemb.Font = New System.Drawing.Font("Microsoft Uighur", 16.2!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnMemb.Location = New System.Drawing.Point(656, 260)
-        Me.btnMemb.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btnMemb.Location = New System.Drawing.Point(492, 211)
+        Me.btnMemb.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btnMemb.Name = "btnMemb"
-        Me.btnMemb.Size = New System.Drawing.Size(124, 39)
+        Me.btnMemb.Size = New System.Drawing.Size(93, 32)
         Me.btnMemb.TabIndex = 0
         Me.btnMemb.Text = "Members"
         Me.btnMemb.UseVisualStyleBackColor = True
@@ -44,32 +44,21 @@ Partial Class General
         'btnTrain
         '
         Me.btnTrain.Font = New System.Drawing.Font("Microsoft Uighur", 16.2!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnTrain.Location = New System.Drawing.Point(363, 256)
-        Me.btnTrain.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btnTrain.Location = New System.Drawing.Point(272, 208)
+        Me.btnTrain.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btnTrain.Name = "btnTrain"
-        Me.btnTrain.Size = New System.Drawing.Size(103, 43)
+        Me.btnTrain.Size = New System.Drawing.Size(77, 35)
         Me.btnTrain.TabIndex = 1
         Me.btnTrain.Text = "Trainers"
         Me.btnTrain.UseVisualStyleBackColor = True
         '
-        'btnSub
-        '
-        Me.btnSub.Font = New System.Drawing.Font("Microsoft Uighur", 16.2!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnSub.Location = New System.Drawing.Point(489, 178)
-        Me.btnSub.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.btnSub.Name = "btnSub"
-        Me.btnSub.Size = New System.Drawing.Size(145, 43)
-        Me.btnSub.TabIndex = 2
-        Me.btnSub.Text = "Subscription"
-        Me.btnSub.UseVisualStyleBackColor = True
-        '
         'btnClass
         '
         Me.btnClass.Font = New System.Drawing.Font("Microsoft Uighur", 16.2!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnClass.Location = New System.Drawing.Point(508, 256)
-        Me.btnClass.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btnClass.Location = New System.Drawing.Point(381, 208)
+        Me.btnClass.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btnClass.Name = "btnClass"
-        Me.btnClass.Size = New System.Drawing.Size(111, 43)
+        Me.btnClass.Size = New System.Drawing.Size(83, 35)
         Me.btnClass.TabIndex = 3
         Me.btnClass.Text = "Classes"
         Me.btnClass.UseVisualStyleBackColor = True
@@ -77,28 +66,39 @@ Partial Class General
         'btnEquip
         '
         Me.btnEquip.Font = New System.Drawing.Font("Microsoft Uighur", 16.2!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnEquip.Location = New System.Drawing.Point(489, 331)
-        Me.btnEquip.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btnEquip.Location = New System.Drawing.Point(367, 269)
+        Me.btnEquip.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btnEquip.Name = "btnEquip"
-        Me.btnEquip.Size = New System.Drawing.Size(147, 43)
+        Me.btnEquip.Size = New System.Drawing.Size(110, 35)
         Me.btnEquip.TabIndex = 4
         Me.btnEquip.Text = "Equipment"
         Me.btnEquip.UseVisualStyleBackColor = True
         '
+        'btnSub
+        '
+        Me.btnSub.Font = New System.Drawing.Font("Microsoft Uighur", 16.2!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnSub.Location = New System.Drawing.Point(367, 148)
+        Me.btnSub.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnSub.Name = "btnSub"
+        Me.btnSub.Size = New System.Drawing.Size(109, 35)
+        Me.btnSub.TabIndex = 5
+        Me.btnSub.Text = "Subscription"
+        Me.btnSub.UseVisualStyleBackColor = True
+        '
         'General
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlDarkDark
         Me.BackgroundImage = Global.GYM_MANAGEMENT.My.Resources.Resources.s
-        Me.ClientSize = New System.Drawing.Size(1207, 763)
+        Me.ClientSize = New System.Drawing.Size(905, 620)
+        Me.Controls.Add(Me.btnSub)
         Me.Controls.Add(Me.btnEquip)
         Me.Controls.Add(Me.btnClass)
-        Me.Controls.Add(Me.btnSub)
         Me.Controls.Add(Me.btnTrain)
         Me.Controls.Add(Me.btnMemb)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "General"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "General"
@@ -108,7 +108,7 @@ Partial Class General
     End Sub
     Friend WithEvents btnMemb As System.Windows.Forms.Button
     Friend WithEvents btnTrain As System.Windows.Forms.Button
-    Friend WithEvents btnSub As System.Windows.Forms.Button
     Friend WithEvents btnClass As System.Windows.Forms.Button
     Friend WithEvents btnEquip As System.Windows.Forms.Button
+    Friend WithEvents btnSub As Button
 End Class

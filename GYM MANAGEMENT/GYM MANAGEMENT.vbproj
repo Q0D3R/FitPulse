@@ -89,6 +89,12 @@
     <Compile Include="Equipment.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Forgot.Designer.vb">
+      <DependentUpon>Forgot.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forgot.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Module.vb" />
     <Compile Include="Subscriptions.Designer.vb">
       <DependentUpon>Subscriptions.vb</DependentUpon>
@@ -143,6 +149,12 @@
     <Compile Include="Trainers.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Users.Designer.vb">
+      <DependentUpon>Users.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Users.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Classes.resx">
@@ -150,6 +162,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Equipment.resx">
       <DependentUpon>Equipment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forgot.resx">
+      <DependentUpon>Forgot.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Subscriptions.resx">
       <DependentUpon>Subscriptions.vb</DependentUpon>
@@ -174,6 +189,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Trainers.resx">
       <DependentUpon>Trainers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users.resx">
+      <DependentUpon>Users.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

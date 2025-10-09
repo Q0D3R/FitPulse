@@ -1,6 +1,4 @@
 ﻿
-Imports System.Data.OleDb
-Imports System.IO
 Public Class Classes
 
     Private Sub btnSave_Click(sender As Object, e As EventArgs) Handles btnSave.Click
