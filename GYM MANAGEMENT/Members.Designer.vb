@@ -44,10 +44,13 @@ Partial Class Members
         Me.dtpDOB = New System.Windows.Forms.DateTimePicker()
         Me.dtpJoinDate = New System.Windows.Forms.DateTimePicker()
         Me.dgvMembers = New System.Windows.Forms.DataGridView()
-        Me.btnnext = New System.Windows.Forms.Button()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.lblMemberID = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.btnLast = New System.Windows.Forms.Button()
+        Me.btnPrior = New System.Windows.Forms.Button()
+        Me.btnNext = New System.Windows.Forms.Button()
+        Me.btnFirst = New System.Windows.Forms.Button()
         CType(Me.dgvMembers, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
@@ -57,7 +60,7 @@ Partial Class Members
         Me.txtPhone.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtPhone.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtPhone.Location = New System.Drawing.Point(587, 19)
-        Me.txtPhone.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtPhone.Margin = New System.Windows.Forms.Padding(2)
         Me.txtPhone.Name = "txtPhone"
         Me.txtPhone.Size = New System.Drawing.Size(180, 29)
         Me.txtPhone.TabIndex = 4
@@ -67,7 +70,7 @@ Partial Class Members
         Me.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtEmail.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtEmail.Location = New System.Drawing.Point(587, 58)
-        Me.txtEmail.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtEmail.Margin = New System.Windows.Forms.Padding(2)
         Me.txtEmail.Name = "txtEmail"
         Me.txtEmail.Size = New System.Drawing.Size(217, 29)
         Me.txtEmail.TabIndex = 5
@@ -77,7 +80,7 @@ Partial Class Members
         Me.txtFirstName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtFirstName.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtFirstName.Location = New System.Drawing.Point(153, 23)
-        Me.txtFirstName.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtFirstName.Margin = New System.Windows.Forms.Padding(2)
         Me.txtFirstName.Name = "txtFirstName"
         Me.txtFirstName.Size = New System.Drawing.Size(217, 29)
         Me.txtFirstName.TabIndex = 6
@@ -87,7 +90,7 @@ Partial Class Members
         Me.txtLastName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtLastName.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtLastName.Location = New System.Drawing.Point(153, 59)
-        Me.txtLastName.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtLastName.Margin = New System.Windows.Forms.Padding(2)
         Me.txtLastName.Name = "txtLastName"
         Me.txtLastName.Size = New System.Drawing.Size(217, 29)
         Me.txtLastName.TabIndex = 7
@@ -95,10 +98,10 @@ Partial Class Members
         'btnSave
         '
         Me.btnSave.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnSave.Location = New System.Drawing.Point(260, 194)
-        Me.btnSave.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnSave.Location = New System.Drawing.Point(184, 194)
+        Me.btnSave.Margin = New System.Windows.Forms.Padding(2)
         Me.btnSave.Name = "btnSave"
-        Me.btnSave.Size = New System.Drawing.Size(80, 56)
+        Me.btnSave.Size = New System.Drawing.Size(156, 56)
         Me.btnSave.TabIndex = 8
         Me.btnSave.Text = "Save"
         Me.btnSave.UseVisualStyleBackColor = True
@@ -107,7 +110,7 @@ Partial Class Members
         '
         Me.btnUpdate.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnUpdate.Location = New System.Drawing.Point(352, 194)
-        Me.btnUpdate.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnUpdate.Margin = New System.Windows.Forms.Padding(2)
         Me.btnUpdate.Name = "btnUpdate"
         Me.btnUpdate.Size = New System.Drawing.Size(87, 56)
         Me.btnUpdate.TabIndex = 9
@@ -118,7 +121,7 @@ Partial Class Members
         '
         Me.btnDelete.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnDelete.Location = New System.Drawing.Point(447, 194)
-        Me.btnDelete.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnDelete.Margin = New System.Windows.Forms.Padding(2)
         Me.btnDelete.Name = "btnDelete"
         Me.btnDelete.Size = New System.Drawing.Size(80, 56)
         Me.btnDelete.TabIndex = 10
@@ -129,7 +132,7 @@ Partial Class Members
         '
         Me.btnClear.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnClear.Location = New System.Drawing.Point(542, 194)
-        Me.btnClear.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnClear.Margin = New System.Windows.Forms.Padding(2)
         Me.btnClear.Name = "btnClear"
         Me.btnClear.Size = New System.Drawing.Size(80, 56)
         Me.btnClear.TabIndex = 11
@@ -237,7 +240,7 @@ Partial Class Members
         Me.cboMembership.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cboMembership.FormattingEnabled = True
         Me.cboMembership.Location = New System.Drawing.Point(587, 132)
-        Me.cboMembership.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.cboMembership.Margin = New System.Windows.Forms.Padding(2)
         Me.cboMembership.Name = "cboMembership"
         Me.cboMembership.Size = New System.Drawing.Size(92, 25)
         Me.cboMembership.TabIndex = 21
@@ -247,7 +250,7 @@ Partial Class Members
         Me.cboGender.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cboGender.FormattingEnabled = True
         Me.cboGender.Location = New System.Drawing.Point(153, 96)
-        Me.cboGender.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.cboGender.Margin = New System.Windows.Forms.Padding(2)
         Me.cboGender.Name = "cboGender"
         Me.cboGender.Size = New System.Drawing.Size(92, 25)
         Me.cboGender.TabIndex = 22
@@ -258,7 +261,7 @@ Partial Class Members
         Me.dtpDOB.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.dtpDOB.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
         Me.dtpDOB.Location = New System.Drawing.Point(153, 128)
-        Me.dtpDOB.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.dtpDOB.Margin = New System.Windows.Forms.Padding(2)
         Me.dtpDOB.Name = "dtpDOB"
         Me.dtpDOB.Size = New System.Drawing.Size(149, 29)
         Me.dtpDOB.TabIndex = 23
@@ -268,7 +271,7 @@ Partial Class Members
         Me.dtpJoinDate.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.dtpJoinDate.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
         Me.dtpJoinDate.Location = New System.Drawing.Point(587, 90)
-        Me.dtpJoinDate.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.dtpJoinDate.Margin = New System.Windows.Forms.Padding(2)
         Me.dtpJoinDate.Name = "dtpJoinDate"
         Me.dtpJoinDate.Size = New System.Drawing.Size(149, 29)
         Me.dtpJoinDate.TabIndex = 24
@@ -278,26 +281,16 @@ Partial Class Members
         Me.dgvMembers.BackgroundColor = System.Drawing.SystemColors.Control
         Me.dgvMembers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvMembers.Location = New System.Drawing.Point(0, 272)
-        Me.dgvMembers.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.dgvMembers.Margin = New System.Windows.Forms.Padding(2)
         Me.dgvMembers.Name = "dgvMembers"
         Me.dgvMembers.RowTemplate.Height = 24
         Me.dgvMembers.Size = New System.Drawing.Size(889, 300)
         Me.dgvMembers.TabIndex = 25
         '
-        'btnnext
-        '
-        Me.btnnext.Location = New System.Drawing.Point(735, 210)
-        Me.btnnext.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.btnnext.Name = "btnnext"
-        Me.btnnext.Size = New System.Drawing.Size(137, 40)
-        Me.btnnext.TabIndex = 26
-        Me.btnnext.Text = "next"
-        Me.btnnext.UseVisualStyleBackColor = True
-        '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(746, 186)
+        Me.Label6.Location = New System.Drawing.Point(663, 186)
         Me.Label6.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(94, 22)
@@ -319,8 +312,11 @@ Partial Class Members
         'GroupBox1
         '
         Me.GroupBox1.BackColor = System.Drawing.Color.Transparent
+        Me.GroupBox1.Controls.Add(Me.btnLast)
+        Me.GroupBox1.Controls.Add(Me.btnPrior)
+        Me.GroupBox1.Controls.Add(Me.btnNext)
+        Me.GroupBox1.Controls.Add(Me.btnFirst)
         Me.GroupBox1.Controls.Add(Me.txtFirstName)
-        Me.GroupBox1.Controls.Add(Me.btnnext)
         Me.GroupBox1.Controls.Add(Me.lblMemberID)
         Me.GroupBox1.Controls.Add(Me.txtPhone)
         Me.GroupBox1.Controls.Add(Me.btnClear)
@@ -350,17 +346,61 @@ Partial Class Members
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Please enter member details"
         '
+        'btnLast
+        '
+        Me.btnLast.Font = New System.Drawing.Font("Cambria", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnLast.Location = New System.Drawing.Point(703, 194)
+        Me.btnLast.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnLast.Name = "btnLast"
+        Me.btnLast.Size = New System.Drawing.Size(54, 54)
+        Me.btnLast.TabIndex = 37
+        Me.btnLast.Text = ">"
+        Me.btnLast.UseVisualStyleBackColor = True
+        '
+        'btnPrior
+        '
+        Me.btnPrior.Font = New System.Drawing.Font("Cambria", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnPrior.Location = New System.Drawing.Point(645, 194)
+        Me.btnPrior.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnPrior.Name = "btnPrior"
+        Me.btnPrior.Size = New System.Drawing.Size(54, 54)
+        Me.btnPrior.TabIndex = 36
+        Me.btnPrior.Text = "<<"
+        Me.btnPrior.UseVisualStyleBackColor = True
+        '
+        'btnNext
+        '
+        Me.btnNext.Font = New System.Drawing.Font("Cambria", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnNext.Location = New System.Drawing.Point(115, 196)
+        Me.btnNext.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnNext.Name = "btnNext"
+        Me.btnNext.Size = New System.Drawing.Size(54, 54)
+        Me.btnNext.TabIndex = 35
+        Me.btnNext.Text = ">>"
+        Me.btnNext.UseVisualStyleBackColor = True
+        '
+        'btnFirst
+        '
+        Me.btnFirst.Font = New System.Drawing.Font("Cambria", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnFirst.Location = New System.Drawing.Point(57, 196)
+        Me.btnFirst.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnFirst.Name = "btnFirst"
+        Me.btnFirst.Size = New System.Drawing.Size(54, 54)
+        Me.btnFirst.TabIndex = 34
+        Me.btnFirst.Text = "<"
+        Me.btnFirst.UseVisualStyleBackColor = True
+        '
         'Members
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.GYM_MANAGEMENT.My.Resources.Resources.t
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(889, 570)
+        Me.ClientSize = New System.Drawing.Size(828, 570)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.dgvMembers)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Members"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "Members"
@@ -391,8 +431,11 @@ Partial Class Members
     Friend WithEvents dtpDOB As System.Windows.Forms.DateTimePicker
     Friend WithEvents dtpJoinDate As System.Windows.Forms.DateTimePicker
     Friend WithEvents dgvMembers As System.Windows.Forms.DataGridView
-    Friend WithEvents btnnext As System.Windows.Forms.Button
     Friend WithEvents Label6 As System.Windows.Forms.Label
     Friend WithEvents lblMemberID As System.Windows.Forms.Label
     Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents btnLast As Button
+    Friend WithEvents btnPrior As Button
+    Friend WithEvents btnNext As Button
+    Friend WithEvents btnFirst As Button
 End Class

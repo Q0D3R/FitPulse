@@ -26,14 +26,14 @@ Partial Class Forgot
         Me.btnClose = New System.Windows.Forms.Button()
         Me.picUser = New System.Windows.Forms.PictureBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.txtConfirm = New System.Windows.Forms.TextBox()
+        Me.txtPassword = New System.Windows.Forms.TextBox()
+        Me.txtMobile = New System.Windows.Forms.TextBox()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.txtUsername = New System.Windows.Forms.TextBox()
         Me.lblUser = New System.Windows.Forms.Label()
         Me.lblRole = New System.Windows.Forms.Label()
         Me.lblPass = New System.Windows.Forms.Label()
-        Me.txtMobile = New System.Windows.Forms.TextBox()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.txtPassword = New System.Windows.Forms.TextBox()
-        Me.txtConfirm = New System.Windows.Forms.TextBox()
         CType(Me.picUser, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
@@ -89,6 +89,46 @@ Partial Class Forgot
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Please provide your credentials"
         '
+        'txtConfirm
+        '
+        Me.txtConfirm.Font = New System.Drawing.Font("Palatino Linotype", 14.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtConfirm.Location = New System.Drawing.Point(149, 197)
+        Me.txtConfirm.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtConfirm.Name = "txtConfirm"
+        Me.txtConfirm.PasswordChar = Global.Microsoft.VisualBasic.ChrW(94)
+        Me.txtConfirm.Size = New System.Drawing.Size(244, 33)
+        Me.txtConfirm.TabIndex = 10
+        '
+        'txtPassword
+        '
+        Me.txtPassword.Font = New System.Drawing.Font("Palatino Linotype", 14.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtPassword.Location = New System.Drawing.Point(149, 143)
+        Me.txtPassword.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtPassword.Name = "txtPassword"
+        Me.txtPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(94)
+        Me.txtPassword.Size = New System.Drawing.Size(244, 33)
+        Me.txtPassword.TabIndex = 9
+        '
+        'txtMobile
+        '
+        Me.txtMobile.Font = New System.Drawing.Font("Palatino Linotype", 14.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtMobile.Location = New System.Drawing.Point(150, 86)
+        Me.txtMobile.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtMobile.Name = "txtMobile"
+        Me.txtMobile.Size = New System.Drawing.Size(244, 33)
+        Me.txtMobile.TabIndex = 8
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Palatino Linotype", 14.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(24, 86)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(107, 25)
+        Me.Label2.TabIndex = 7
+        Me.Label2.Text = "Mobile No."
+        '
         'txtUsername
         '
         Me.txtUsername.Font = New System.Drawing.Font("Palatino Linotype", 14.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -130,46 +170,6 @@ Partial Class Forgot
         Me.lblPass.Size = New System.Drawing.Size(96, 25)
         Me.lblPass.TabIndex = 1
         Me.lblPass.Text = "Password"
-        '
-        'txtMobile
-        '
-        Me.txtMobile.Font = New System.Drawing.Font("Palatino Linotype", 14.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtMobile.Location = New System.Drawing.Point(150, 86)
-        Me.txtMobile.Margin = New System.Windows.Forms.Padding(2)
-        Me.txtMobile.Name = "txtMobile"
-        Me.txtMobile.Size = New System.Drawing.Size(244, 33)
-        Me.txtMobile.TabIndex = 8
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Palatino Linotype", 14.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(24, 86)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(107, 25)
-        Me.Label2.TabIndex = 7
-        Me.Label2.Text = "Mobile No."
-        '
-        'txtPassword
-        '
-        Me.txtPassword.Font = New System.Drawing.Font("Palatino Linotype", 14.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtPassword.Location = New System.Drawing.Point(149, 143)
-        Me.txtPassword.Margin = New System.Windows.Forms.Padding(2)
-        Me.txtPassword.Name = "txtPassword"
-        Me.txtPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(94)
-        Me.txtPassword.Size = New System.Drawing.Size(244, 33)
-        Me.txtPassword.TabIndex = 9
-        '
-        'txtConfirm
-        '
-        Me.txtConfirm.Font = New System.Drawing.Font("Palatino Linotype", 14.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtConfirm.Location = New System.Drawing.Point(149, 197)
-        Me.txtConfirm.Margin = New System.Windows.Forms.Padding(2)
-        Me.txtConfirm.Name = "txtConfirm"
-        Me.txtConfirm.PasswordChar = Global.Microsoft.VisualBasic.ChrW(94)
-        Me.txtConfirm.Size = New System.Drawing.Size(244, 33)
-        Me.txtConfirm.TabIndex = 10
         '
         'Forgot
         '

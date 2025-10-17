@@ -6,19 +6,10 @@ Public Class Members
     Private Sub frmMembers_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.Text = "Gym Management - Members"
         cboGender.Items.AddRange(New String() {"Female", "Male"})
-        LoadData()
-    End Sub
+        cboMembership.Items.AddRange(New String() {"Premium", "Basic", "General"})
 
-    Private Sub LoadData()
-        Try
-            sql = "SELECT * FROM Members"
-            da = New OleDbDataAdapter(sql, con)
-            dt = New DataTable
-            da.Fill(dt)
-            dgvMembers.DataSource = dt
-        Catch ex As Exception
-            MsgBox(ex.Message)
-        End Try
+        LoadData()
+        CurrentRecord()
     End Sub
 
     Private Sub ClearFields()
@@ -37,13 +28,16 @@ Public Class Members
         End If
 
         Try
-            sql = "INSERT INTO Members (FirstName, LastName, Gender, DOB, JoinDate) VALUES (?, ?, ?, ?, ?)"
+            sql = "INSERT INTO Members (FirstName, LastName, Gender, DOB, JoinDate, Phone, Email, MembershipType) VALUES (?, ?, ?, ?, ?,  ?, ?, ?)"
             cmd = New OleDbCommand(sql, con)
             cmd.Parameters.AddWithValue("?", txtFirstName.Text)
             cmd.Parameters.AddWithValue("?", txtLastName.Text)
             cmd.Parameters.AddWithValue("?", cboGender.Text)
             cmd.Parameters.AddWithValue("?", dtpDOB.Value)
             cmd.Parameters.AddWithValue("?", dtpJoinDate.Value)
+            cmd.Parameters.AddWithValue("?", txtPhone.Text)
+            cmd.Parameters.AddWithValue("?", txtEmail.Text)
+            cmd.Parameters.AddWithValue("?", cboMembership.Text)
 
             con.Open()
             cmd.ExecuteNonQuery()
@@ -80,13 +74,17 @@ Public Class Members
         End If
 
         Try
-            sql = "UPDATE Members SET FirstName=?, LastName=?, Gender=?, DOB=?, JoinDate=? WHERE MemberID=?"
+            sql = "UPDATE Members SET FirstName=?, LastName=?, Gender=?, DOB=?, JoinDate=?, Phone=?, Email=?, MembershipType=? WHERE MemberID=?"
             cmd = New OleDbCommand(sql, con)
             cmd.Parameters.AddWithValue("?", txtFirstName.Text)
             cmd.Parameters.AddWithValue("?", txtLastName.Text)
             cmd.Parameters.AddWithValue("?", cboGender.Text)
             cmd.Parameters.AddWithValue("?", dtpDOB.Value)
             cmd.Parameters.AddWithValue("?", dtpJoinDate.Value)
+            cmd.Parameters.AddWithValue("?", txtPhone.Text)
+            cmd.Parameters.AddWithValue("?", txtEmail.Text)
+            cmd.Parameters.AddWithValue("?", cboMembership.Text)
+
             cmd.Parameters.AddWithValue("?", lblMemberID.Text)
 
             con.Open()
@@ -154,11 +152,80 @@ Public Class Members
         Subscriptions.Show()
     End Sub
 
-    Private Sub Label6_Click(sender As Object, e As EventArgs) Handles Label6.Click
+    Sub CurrentRecord()
+        If cri >= 0 AndAlso cri < dt4.Rows.Count Then
+            cr = dt4.Rows(cri)
+            lblMemberID.Text = cr("MemberID").ToString
+            txtFirstName.Text = cr("FirstName").ToString
+            txtLastName.Text = cr("LastName").ToString
+            cboGender.Text = cr("Gender").ToString
+            dtpDOB.Value = cr("DOB").ToString
+            dtpJoinDate.Value = cr("JoinDate").ToString
+            txtPhone.Text = cr("Phone").ToString
+            txtEmail.Text = cr("Email").ToString
+            cboMembership.Text = cr("MembershipType").ToString
 
+            btnPrior.Enabled = (cri > 0)
+            btnNext.Enabled = (cri < dt4.Rows.Count - 1)
+            btnFirst.Enabled = (cri > 0)
+            btnLast.Enabled = (cri < dt4.Rows.Count - 1)
+        End If
     End Sub
 
-    Private Sub GroupBox1_Enter(sender As Object, e As EventArgs) Handles GroupBox1.Enter
+    Sub LoadData()
+        Try
+            If con.State = ConnectionState.Closed Then
+                con.Open()
+            End If
 
+
+            Using cmd As New OleDbCommand("SELECT * FROM Members", con)
+                If con.State = ConnectionState.Closed Then
+                    con.Open()
+                End If
+
+                Using dr As OleDbDataReader = cmd.ExecuteReader()
+                    If dr.Read Then
+                        dt4.Load(dr) ' Load all data from DataReader into DataTable
+                        dgvMembers.DataSource = dt4
+                    Else
+                        MsgBox("No data to display!")
+                    End If
+                End Using
+            End Using
+        Catch ex As Exception
+            MsgBox("Error: " & ex.Message)
+        Finally
+            REM dr.Dispose()
+
+            If con.State = ConnectionState.Open Then
+                con.Close()
+            End If
+        End Try
     End Sub
+
+    Private Sub btnFirst_Click(sender As Object, e As EventArgs) Handles btnFirst.Click
+        cri = 0
+        CurrentRecord()
+    End Sub
+
+    Private Sub btnPrior_Click(sender As Object, e As EventArgs) Handles btnPrior.Click
+        If cri > 0 Then
+            cri -= 1
+            CurrentRecord()
+        End If
+    End Sub
+
+    Private Sub btnLast_Click(sender As Object, e As EventArgs) Handles btnLast.Click
+        cri = dt4.Rows.Count - 1
+        CurrentRecord()
+    End Sub
+
+    Private Sub btnNext_Click(sender As Object, e As EventArgs) Handles btnNext.Click
+        If cri < dt4.Rows.Count - 1 Then
+            cri += 1
+            CurrentRecord()
+        End If
+    End Sub
+
 End Class

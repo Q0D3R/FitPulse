@@ -12,10 +12,6 @@
         Trainers.Show()
     End Sub
 
-    Private Sub btnSub_Click(sender As Object, e As EventArgs) Handles btnSub.Click
-        Subscriptions.Show()
-    End Sub
-
     Private Sub btnClass_Click(sender As Object, e As EventArgs) Handles btnClass.Click
         Classes.Show()
     End Sub
@@ -24,5 +20,7 @@
         Me.Text = "Gym Management - General"
     End Sub
 
-
+    Private Sub btnSub_Click(sender As Object, e As EventArgs) Handles btnSub.Click
+        Subscriptions.Show()
+    End Sub
 End Class
