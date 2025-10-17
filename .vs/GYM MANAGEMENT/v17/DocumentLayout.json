@@ -7,15 +7,15 @@
       "RelativeMoniker": "D:0:0:{4259AA6B-9C46-4165-B892-72A1D27AC6B5}|GYM MANAGEMENT\\GYM MANAGEMENT.vbproj|solutionrelative:gym management\\trainers.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4259AA6B-9C46-4165-B892-72A1D27AC6B5}|GYM MANAGEMENT\\GYM MANAGEMENT.vbproj|c:\\users\\r0053-1t\\onedrive\\documents\\github\\gym-management\\gym management\\trainers.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{4259AA6B-9C46-4165-B892-72A1D27AC6B5}|GYM MANAGEMENT\\GYM MANAGEMENT.vbproj|solutionrelative:gym management\\trainers.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4259AA6B-9C46-4165-B892-72A1D27AC6B5}|GYM MANAGEMENT\\GYM MANAGEMENT.vbproj|c:\\users\\r0053-1t\\onedrive\\documents\\github\\gym-management\\gym management\\subscriptions.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "AbsoluteMoniker": "D:0:0:{4259AA6B-9C46-4165-B892-72A1D27AC6B5}|GYM MANAGEMENT\\GYM MANAGEMENT.vbproj|C:\\Users\\R0053-1T\\OneDrive\\Documents\\GitHub\\gym-management\\gym management\\subscriptions.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{4259AA6B-9C46-4165-B892-72A1D27AC6B5}|GYM MANAGEMENT\\GYM MANAGEMENT.vbproj|solutionrelative:gym management\\subscriptions.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4259AA6B-9C46-4165-B892-72A1D27AC6B5}|GYM MANAGEMENT\\GYM MANAGEMENT.vbproj|c:\\users\\r0053-1t\\onedrive\\documents\\github\\gym-management\\gym management\\subscriptions.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "AbsoluteMoniker": "D:0:0:{4259AA6B-9C46-4165-B892-72A1D27AC6B5}|GYM MANAGEMENT\\GYM MANAGEMENT.vbproj|C:\\Users\\R0053-1T\\OneDrive\\Documents\\GitHub\\gym-management\\gym management\\trainers.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{4259AA6B-9C46-4165-B892-72A1D27AC6B5}|GYM MANAGEMENT\\GYM MANAGEMENT.vbproj|solutionrelative:gym management\\trainers.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4259AA6B-9C46-4165-B892-72A1D27AC6B5}|GYM MANAGEMENT\\GYM MANAGEMENT.vbproj|C:\\Users\\R0053-1T\\OneDrive\\Documents\\GitHub\\gym-management\\gym management\\subscriptions.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
       "RelativeMoniker": "D:0:0:{4259AA6B-9C46-4165-B892-72A1D27AC6B5}|GYM MANAGEMENT\\GYM MANAGEMENT.vbproj|solutionrelative:gym management\\subscriptions.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     }
   ],
@@ -26,8 +26,12 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d84ee353-0bef-5a41-a649-8f89aca5d84d}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -36,14 +40,14 @@
               "RelativeDocumentMoniker": "GYM MANAGEMENT\\Trainers.vb",
               "ToolTip": "C:\\Users\\R0053-1T\\OneDrive\\Documents\\GitHub\\gym-management\\GYM MANAGEMENT\\Trainers.vb",
               "RelativeToolTip": "GYM MANAGEMENT\\Trainers.vb",
-              "ViewState": "AgIAAK0AAAAAAAAAAAAmwMYAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAJgAAAAAAAAAAAAAwLIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2025-10-17T14:31:24.289Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Trainers.vb [Design]",
               "DocumentMoniker": "C:\\Users\\R0053-1T\\OneDrive\\Documents\\GitHub\\gym-management\\GYM MANAGEMENT\\Trainers.vb",
               "RelativeDocumentMoniker": "GYM MANAGEMENT\\Trainers.vb",
@@ -55,13 +59,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Subscriptions.vb",
               "DocumentMoniker": "C:\\Users\\R0053-1T\\OneDrive\\Documents\\GitHub\\gym-management\\GYM MANAGEMENT\\Subscriptions.vb",
               "RelativeDocumentMoniker": "GYM MANAGEMENT\\Subscriptions.vb",
               "ToolTip": "C:\\Users\\R0053-1T\\OneDrive\\Documents\\GitHub\\gym-management\\GYM MANAGEMENT\\Subscriptions.vb",
               "RelativeToolTip": "GYM MANAGEMENT\\Subscriptions.vb",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2025-10-17T14:31:20.023Z",
               "EditorCaption": ""

@@ -28,13 +28,10 @@ Public Class Equipment
         cboStatus.Items.AddRange(New String() {"New", "Refurbished", "Old"})
         cboCondition.Items.AddRange(New String() {"Good", "Average", "Bad"})
 
-        LoadData()
         LoadType()
 
-        If dt1.Rows.Count > 0 Then
-            cri = 0
-            CurrentRecord()
-        End If
+        LoadData()
+        CurrentRecord()
     End Sub
 
     Private Sub btnSave_Click(sender As Object, e As EventArgs) Handles btnSave.Click
@@ -151,7 +148,7 @@ Public Class Equipment
                 txtName.Text = cr("Name").ToString
                 lblTypeID.Text = cr("TypeID").ToString
                 cboType.Text = cr("Condition").ToString
-                dtpPurchase.Value = cr("PurchaseDate").ToString
+                dtpPurchase.Value = Convert.ToDateTime(cr("PurchaseDate"))
                 cboStatus.Text = cr("Status").ToString
 
                 btnPrior.Enabled = (cri > 0)
@@ -215,4 +212,8 @@ Public Class Equipment
         LoadLbl("TypeID", "Types", "Type", cboType.Text, lblTypeID.Text)
     End Sub
 
+    Private Sub btnLoad_Click(sender As Object, e As EventArgs) Handles btnLoad.Click
+        LoadData()
+        CurrentRecord()
+    End Sub
 End Class

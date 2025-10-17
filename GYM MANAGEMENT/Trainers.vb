@@ -3,7 +3,7 @@ Imports System.Data.OleDb
 Imports System.Data.SqlClient
 Public Class Trainers
 
-    Private Sub btnSave_Click(sender As Object, e As EventArgs) Handles btnSave.Click
+    Private Sub BtnSave_Click(sender As Object, e As EventArgs) Handles btnSave.Click
         Try
             If con.State = ConnectionState.Closed Then
                 con.Open()
@@ -28,7 +28,7 @@ Public Class Trainers
             End If
         End Try
     End Sub
-    Private Sub trainers_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub Trainers_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.Text = "Gym Management - Trainers"
 
         LoadData()
@@ -39,30 +39,7 @@ Public Class Trainers
         End If
     End Sub
 
-    Private Sub Label5_Click(sender As Object, e As EventArgs)
-        Me.Close()
-        Classes.Show()
-    End Sub
-
-    Private Sub Label4_Click(sender As Object, e As EventArgs)
-        Me.Close()
-        Equipment.Show()
-    End Sub
-
-    Private Sub Label3_Click(sender As Object, e As EventArgs)
-        Me.Close()
-        Subscriptions.Show()
-    End Sub
-
-    Private Sub Label2_Click(sender As Object, e As EventArgs)
-    End Sub
-
-    Private Sub Label1_Click(sender As Object, e As EventArgs)
-        Me.Close()
-        Members.Show()
-    End Sub
-
-    Private Sub btnUpdate_Click(sender As Object, e As EventArgs) Handles btnUpdate.Click
+    Private Sub BtnUpdate_Click(sender As Object, e As EventArgs) Handles btnUpdate.Click
         Try
             If con.State = ConnectionState.Closed Then
                 con.Open()
@@ -88,7 +65,7 @@ Public Class Trainers
         End Try
     End Sub
 
-    Private Sub btnDelete_Click(sender As Object, e As EventArgs) Handles btnDelete.Click
+    Private Sub BtnDelete_Click(sender As Object, e As EventArgs) Handles btnDelete.Click
         Try
             If con.State = ConnectionState.Closed Then
                 con.Open()
@@ -112,7 +89,7 @@ Public Class Trainers
         End Try
     End Sub
 
-    Private Sub btnClear_Click(sender As Object, e As EventArgs) Handles btnClear.Click
+    Private Sub BtnClear_Click(sender As Object, e As EventArgs) Handles btnClear.Click
         With Me
             .lblTrainerID.ResetText()
             .txtFirstname.Clear()
@@ -123,12 +100,12 @@ Public Class Trainers
         End With
     End Sub
 
-    Private Sub btnLoad_Click(sender As Object, e As EventArgs) Handles btnLoad.Click
+    Private Sub BtnLoad_Click(sender As Object, e As EventArgs) Handles btnLoad.Click
         LoadData()
         CurrentRecord()
     End Sub
 
-    Private Sub btnNext_Click(sender As Object, e As EventArgs) Handles btnNext.Click
+    Private Sub BtnNext_Click(sender As Object, e As EventArgs) Handles btnNext.Click
         If cri < dt5.Rows.Count - 1 Then
             cri += 1
             CurrentRecord()
@@ -183,20 +160,21 @@ Public Class Trainers
         End Try
     End Sub
 
-    Private Sub btnFirst_Click(sender As Object, e As EventArgs) Handles btnFirst.Click
+    Private Sub BtnFirst_Click(sender As Object, e As EventArgs) Handles btnFirst.Click
         cri = 0
         CurrentRecord()
     End Sub
 
-    Private Sub btnPrior_Click(sender As Object, e As EventArgs) Handles btnPrior.Click
+    Private Sub BtnPrior_Click(sender As Object, e As EventArgs) Handles btnPrior.Click
         If cri > 0 Then
             cri -= 1
             CurrentRecord()
         End If
     End Sub
 
-    Private Sub btnLast_Click(sender As Object, e As EventArgs) Handles btnLast.Click
+    Private Sub BtnLast_Click(sender As Object, e As EventArgs) Handles btnLast.Click
         cri = dt5.Rows.Count - 1
         CurrentRecord()
     End Sub
+
 End Class

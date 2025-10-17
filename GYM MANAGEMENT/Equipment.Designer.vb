@@ -37,6 +37,7 @@ Partial Class Equipment
         Me.btnDelete = New System.Windows.Forms.Button()
         Me.lblEquipTitle = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.lblTypeID = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.lblEquipmentID = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -46,7 +47,6 @@ Partial Class Equipment
         Me.btnPrior = New System.Windows.Forms.Button()
         Me.btnNext = New System.Windows.Forms.Button()
         Me.btnFirst = New System.Windows.Forms.Button()
-        Me.lblTypeID = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -217,6 +217,18 @@ Partial Class Equipment
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Please enter equipment details"
         '
+        'lblTypeID
+        '
+        Me.lblTypeID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblTypeID.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.lblTypeID.Font = New System.Drawing.Font("Microsoft Uighur", 24.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTypeID.Location = New System.Drawing.Point(406, 159)
+        Me.lblTypeID.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblTypeID.Name = "lblTypeID"
+        Me.lblTypeID.Size = New System.Drawing.Size(51, 38)
+        Me.lblTypeID.TabIndex = 24
+        Me.lblTypeID.Text = "1"
+        '
         'Label1
         '
         Me.Label1.AutoSize = True
@@ -315,18 +327,6 @@ Partial Class Equipment
         Me.btnFirst.TabIndex = 30
         Me.btnFirst.Text = "<"
         Me.btnFirst.UseVisualStyleBackColor = True
-        '
-        'lblTypeID
-        '
-        Me.lblTypeID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblTypeID.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.lblTypeID.Font = New System.Drawing.Font("Microsoft Uighur", 24.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTypeID.Location = New System.Drawing.Point(406, 159)
-        Me.lblTypeID.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.lblTypeID.Name = "lblTypeID"
-        Me.lblTypeID.Size = New System.Drawing.Size(51, 38)
-        Me.lblTypeID.TabIndex = 24
-        Me.lblTypeID.Text = "1"
         '
         'Equipment
         '
