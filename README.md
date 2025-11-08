@@ -64,7 +64,7 @@ Licensed under the [MIT License](LICENSE).
 
 ## Contact
 
-For issues or suggestions, please open an issue or contact [your-email@example.com](mailto:your-email@example.com).
+For issues or suggestions, please open an issue or contact [your-email@example.com](dev-q0d3r@proton.me).
 
 ---
 
