@@ -1,6 +1,6 @@
-# Gym Management System (VB.NET)
+# FitPulse (VB.NET)
 
-A robust Gym Management System built using VB.NET, designed to automate and streamline operations for gyms and fitness centers. This application provides tools for managing memberships, trainers, classes, payments, and attendance in a secure and efficient manner.
+A robust FitPulse built using VB.NET, designed to automate and streamline operations for gyms and fitness centers. This application provides tools for managing memberships, trainers, classes, payments, and attendance in a secure and efficient manner.
 
 ## Features
 
